@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/rb-system-03d7585a-cce7-438e-a438-924ced86e730/styles.css">
+<script src="_ds/rb-system-03d7585a-cce7-438e-a438-924ced86e730/_ds_bundle.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--rb-surface-page); }
+  @media print {
+    @page { margin: 14mm; }
+    body { background: #fff !important; color: #111 !important; }
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+    [data-noprint] { display: none !important; }
+    [data-printopen] { display: block !important; }
+    section { break-inside: avoid; }
+  }
+</style>
+</helmet>
+<div style="min-height:100vh;background:var(--rb-surface-page);color:var(--rb-text-primary);font-family:var(--rb-font-mono);background-image:var(--rb-scanline)">
+
+  <header data-noprint="" style="position: fixed; top: 0; left: 0; right: 0; z-index: 60; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 24px; background: rgba(10,10,10,0.86); backdrop-filter: blur(10px); border-bottom: 1px solid var(--rb-gray-700); height: 85px">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--rb-text-primary)">
+      <img src="assets/rb-mark-yellow-on-black.png" alt="RB" style="width: 40px; height: 40px; object-fit: contain; border: 1px solid var(--rb-yellow-700); background: var(--rb-black-800); flex-grow: 0">
+      <span style="font-family: var(--rb-font-display); font-size: 1rem; letter-spacing: 0.14em; text-transform: uppercase">Raffaele Bini</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:20px;font-size:var(--rb-text-2xs);letter-spacing:0.16em;text-transform:uppercase">
+      <a href="#impact" style="color:var(--rb-text-muted);text-decoration:none">Impact</a>
+      <a href="#career" style="color:var(--rb-text-muted);text-decoration:none">Career</a>
+      <a href="#skills" style="color:var(--rb-text-muted);text-decoration:none">Skills</a>
+      <a href="#portfolio" style="color:var(--rb-text-muted);text-decoration:none">Portfolio</a>
+      <a href="#education" style="color:var(--rb-text-muted);text-decoration:none">Education</a>
+      <a href="#values" style="color:var(--rb-text-muted);text-decoration:none">Values</a>
+    </nav>
+  </header>
+
+  <section id="top" style="max-width:1120px;margin:0 auto;padding:152px 32px 96px">
+   <div style="display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,0.85fr);gap:48px;align-items:start">
+    <div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
+      <span style="width:8px;height:8px;border-radius:var(--rb-radius-pill);background:var(--rb-signal-ok)"></span>
+      <span style="font-size:var(--rb-text-2xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--rb-text-muted)">AVAILABLE FOR CONSULTING, COACHING, TECHNICAL EXPERTISING· GALICIA / EUROPE</span>
+    </div>
+    <h1 style="font-family:var(--rb-font-display);font-size:clamp(34px,5.2vw,68px);line-height:1.04;letter-spacing:-0.01em;text-transform:uppercase;max-width:18ch">Multipotential engineer building <span style="color:var(--rb-yellow-500)">digital, sustainable and lean</span> transformations</h1>
+    <p style="max-width:62ch;margin:32px 0 0;font-size:var(--rb-text-lg);line-height:1.65;color:var(--rb-text-secondary);text-wrap:pretty">I am a mechanical engineer working at the intersection of artificial intelligence, digital technology and sustainable innovation. For 18+ years I ran industrial operations inside large food companies; today I help organizations turn emerging technology into decisions that hold up in complex systems.</p>
+    <p style="max-width:62ch;margin:20px 0 0;font-size:var(--rb-text-base);line-height:1.65;color:var(--rb-text-muted);text-wrap:pretty">What motivates me most is building relationships with people, facing the challenge of change, and continuously looking for opportunities to improve.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px" data-noprint="">
+      <x-import component-from-global-scope="RBSystem.Button" variant="primary" glow="{{ true }}" onClick="{{ onPrint }}" hint-size="200px,44px">Download PDF CV</x-import>
+      <x-import component-from-global-scope="RBSystem.Button" variant="secondary" onClick="{{ onLinkedIn }}" hint-size="150px,44px">LinkedIn →</x-import>
+      
+    </div>
+    </div>
+    <div style="position:relative;display:flex;justify-content:center;align-items:flex-start;margin-top:48px">
+      
+      <img src="uploads/photo-1787839676255-jw1e.png" alt="Raffaele Bini" style="position: relative; width: 100%; max-width: 380px; height: auto; display: block; filter: drop-shadow(0 18px 40px rgba(0,0,0,0.7)); opacity: 0.5; border-width: 1px; border-style: solid; border-color: #ABABAB">
+    </div>
+   </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;margin-top:64px;background:var(--rb-gray-700);border:1px solid var(--rb-gray-700)">
+      <div style="background:var(--rb-surface-page);padding:20px 18px"><div style="font-size:var(--rb-text-2xs);letter-spacing:0.16em;text-transform:uppercase;color:var(--rb-text-muted)">Now</div><div style="margin-top:8px;font-family:var(--rb-font-display);font-size:var(--rb-text-base);text-transform:uppercase">Projects Consultant</div><div style="margin-top:4px;color:var(--rb-text-secondary);font-size:var(--rb-text-sm)">DIH DATAlife</div></div>
+      <div style="background:var(--rb-surface-page);padding:20px 18px"><div style="font-size:var(--rb-text-2xs);letter-spacing:0.16em;text-transform:uppercase;color:var(--rb-text-muted)">Base</div><div style="margin-top:8px;font-family:var(--rb-font-display);font-size:var(--rb-text-base);text-transform:uppercase">Galicia, Spain</div><div style="margin-top:4px;color:var(--rb-text-secondary);font-size:var(--rb-text-sm)">Santiago de Compostela</div></div>
+      <div style="background:var(--rb-surface-page);padding:20px 18px"><div style="font-size:var(--rb-text-2xs);letter-spacing:0.16em;text-transform:uppercase;color:var(--rb-text-muted)">Degree</div><div style="margin-top:8px;font-family:var(--rb-font-display);font-size:var(--rb-text-base);text-transform:uppercase">MSc Mech. Eng.</div><div style="margin-top:4px;color:var(--rb-text-secondary);font-size:var(--rb-text-sm)">Università di Firenze · 2004</div></div>
+      <div style="background:var(--rb-surface-page);padding:20px 18px"><div style="font-size:var(--rb-text-2xs);letter-spacing:0.16em;text-transform:uppercase;color:var(--rb-text-muted)">Web</div><div style="margin-top:8px;font-family:var(--rb-font-display);font-size:var(--rb-text-base);text-transform:uppercase">raffaelebini.com</div><div style="margin-top:4px;color:var(--rb-text-secondary);font-size:var(--rb-text-sm)">IT · ES · GL · EN</div></div>
+    </div>
+  </section>
+
+  <section id="impact" style="border-top:1px solid var(--rb-gray-700);max-width:1120px;margin:0 auto;padding:80px 32px">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px">
+      <span style="font-size:var(--rb-text-2xs);letter-spacing:0.2em;color:var(--rb-yellow-500)">01 / FOOTPRINTS</span>
+    </div>
+    <h2 style="font-size:clamp(24px,3vw,36px);text-transform:uppercase;margin-bottom:12px">Impact I have left along the way</h2>
+    <p style="color:var(--rb-text-muted);font-size:var(--rb-text-sm);margin:0 0 40px">Measured results from Lean, TPM and Industry 4.0 programmes in food and beverage plants.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+      <sc-for list="{{ metrics }}" as="m" hint-placeholder-count="6">
+        <div data-reveal="" style="opacity:0;transform:translateY(18px);transition:opacity 600ms var(--rb-ease-out),transform 600ms var(--rb-ease-out);border:1px solid var(--rb-gray-700);background:var(--rb-surface-card);padding:24px 20px" style-hover="border-color:var(--rb-yellow-700)">
+          <div style="font-family:var(--rb-font-display);font-size:clamp(30px,3.4vw,42px);color:var(--rb-yellow-500);line-height:1">{{ m.display }}</div>
+          <div style="margin-top:14px;font-size:var(--rb-text-2xs);letter-spacing:0.16em;text-transform:uppercase;color:var(--rb-text-primary)">{{ m.label }}</div>
+          <div style="margin-top:8px;font-size:var(--rb-text-sm);line-height:1.55;color:var(--rb-text-muted)">{{ m.note }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="career" style="border-top:1px solid var(--rb-gray-700);max-width:1120px;margin:0 auto;padding:80px 32px">
+    <span style="font-size:var(--rb-text-2xs);letter-spacing:0.2em;color:var(--rb-yellow-500)">02 / CAREER</span>
+    <h2 style="font-size:clamp(24px,3vw,36px);text-transform:uppercase;margin:8px 0 12px">Twenty years, one direction</h2>
+    <p style="color:var(--rb-text-muted);font-size:var(--rb-text-sm);margin:0 0 20px">Click any step to open its detail.</p>
+    <div data-noprint="" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:44px">
+      <sc-for list="{{ themes }}" as="t" hint-placeholder-count="4">
+        <x-import component-from-global-scope="RBSystem.Tag" selected="{{ t.on }}" onClick="{{ t.toggle }}" hint-size="110px,30px">{{ t.name }}</x-import>
+      </sc-for>
+    </div>
+    <div style="position:relative;padding-left:40px">
+      <div style="position:absolute;left:9px;top:6px;bottom:6px;width:1px;background:linear-gradient(to bottom,var(--rb-yellow-700),var(--rb-gray-700))"></div>
+      <sc-for list="{{ timeline }}" as="job" hint-placeholder-count="4">
+        <div data-reveal="" style="opacity:0;transform:translateY(18px);transition:opacity 600ms var(--rb-ease-out),transform 600ms var(--rb-ease-out);position:relative;margin-bottom:20px">
+          <div style="position:absolute;left:-36px;top:22px;width:11px;height:11px;border-radius:var(--rb-radius-pill);background:{{ job.dot }};border:1px solid var(--rb-black-900);box-shadow:{{ job.dotGlow }}"></div>
+          <div onClick="{{ job.toggle }}" style="cursor:pointer;border:1px solid {{ job.border }};background:var(--rb-surface-card);padding:22px 24px" style-hover="border-color:var(--rb-yellow-700)">
+            <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px">
+              <div>
+                <div style="font-size:var(--rb-text-2xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--rb-yellow-500)">{{ job.period }} · {{ job.duration }}</div>
+                <h3 style="font-size:var(--rb-text-xl);text-transform:uppercase;margin-top:10px">{{ job.role }}</h3>
+                <div style="margin-top:6px;font-size:var(--rb-text-base);color:var(--rb-text-secondary)">{{ job.company }} · {{ job.place }}</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:14px">
+                <x-import component-from-global-scope="RBSystem.Badge" tone="{{ job.tone }}" hint-size="90px,22px">{{ job.theme }}</x-import>
+                <span data-noprint="" style="font-family:var(--rb-font-display);font-size:var(--rb-text-sm);color:var(--rb-text-muted)">{{ job.caret }}</span>
+              </div>
+            </div>
+            <sc-if value="{{ job.open }}" hint-placeholder-val="{{ false }}">
+              <div data-printopen="" style="margin-top:22px;padding-top:20px;border-top:1px solid var(--rb-gray-700)">
+                <p style="margin:0 0 16px;font-size:var(--rb-text-base);line-height:1.65;color:var(--rb-text-secondary);max-width:70ch;text-wrap:pretty">{{ job.summary }}</p>
+                <ul style="margin:0;padding-left:18px;display:grid;gap:8px;list-style:none">
+                  <sc-for list="{{ job.bullets }}" as="b" hint-placeholder-count="4">
+                    <li style="position:relative;font-size:var(--rb-text-sm);line-height:1.6;color:var(--rb-text-muted);padding-left:16px"><span style="position:absolute;left:0;color:var(--rb-yellow-600)">·</span>{{ b }}</li>
+                  </sc-for>
+                </ul>
+                <sc-if value="{{ job.hasRoles }}" hint-placeholder-val="{{ false }}">
+                  <div style="margin-top:24px;display:grid;gap:1px;background:var(--rb-gray-700);border:1px solid var(--rb-gray-700)">
+                    <sc-for list="{{ job.roles }}" as="r" hint-placeholder-count="5">
+                      <div style="background:var(--rb-surface-page);padding:16px 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between">
+                        <div>
+                          <div style="font-family:var(--rb-font-display);font-size:var(--rb-text-sm);text-transform:uppercase">{{ r.role }}</div>
+                          <div style="margin-top:5px;font-size:var(--rb-text-sm);color:var(--rb-text-muted)">{{ r.place }}</div>
+                        </div>
+                        <div style="font-size:var(--rb-text-2xs);letter-spacing:0.16em;color:var(--rb-yellow-500)">{{ r.period }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </sc-for>
+      <div style="position:relative;padding:6px 0 0 0">
+        <div style="position:absolute;left:-33px;top:12px;width:5px;height:5px;border-radius:var(--rb-radius-pill);background:var(--rb-gray-500)"></div>
+        <div style="font-size:var(--rb-text-sm);color:var(--rb-text-muted)">2004 — MSc in Mechanical Engineering, Università degli Studi di Firenze</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="border-top:1px solid var(--rb-gray-700);max-width:1120px;margin:0 auto;padding:80px 32px">
+    <span style="font-size:var(--rb-text-2xs);letter-spacing:0.2em;color:var(--rb-yellow-500)">03 / CAPABILITIES</span>
+    <h2 style="font-size:clamp(24px,3vw,36px);text-transform:uppercase;margin:8px 0 32px">What I bring to a team</h2>
+    <div style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:start">
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <sc-for list="{{ skills }}" as="s" hint-placeholder-count="12">
+          <div onMouseEnter="{{ s.hover }}" onClick="{{ s.hover }}" style="cursor:default;border:1px solid {{ s.border }};color:{{ s.color }};padding:10px 16px;font-size:var(--rb-text-sm);letter-spacing:0.04em;background:var(--rb-surface-card);transition:all 160ms var(--rb-ease-out)">{{ s.name }}</div>
+        </sc-for>
+      </div>
+      <div style="border:1px solid var(--rb-gray-700);background:var(--rb-surface-sunken);padding:24px;position:sticky;top:96px;clip-path:var(--rb-chamfer-md)">
+        <div style="font-size:var(--rb-text-2xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--rb-text-muted)">Detail</div>
+        <div style="margin-top:14px;font-family:var(--rb-font-display);font-size:var(--rb-text-lg);text-transform:uppercase;color:var(--rb-yellow-500)">{{ activeSkillName }}</div>
+        <p style="margin:12px 0 0;font-size:var(--rb-text-sm);line-height:1.65;color:var(--rb-text-secondary);text-wrap:pretty">{{ activeSkillNote }}</p>
+        <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--rb-gray-700);font-size:var(--rb-text-2xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--rb-text-muted)">Leadership philosophy</div>
+        <ul style="margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px">
+          <li style="font-size:var(--rb-text-sm);color:var(--rb-text-muted)">→ People first: performance grows where well-being grows</li>
+          <li style="font-size:var(--rb-text-sm);color:var(--rb-text-muted)">→ Sustainability as strategic driver, not compliance</li>
+          <li style="font-size:var(--rb-text-sm);color:var(--rb-text-muted)">→ Continuous improvement as a mindset</li>
+          <li style="font-size:var(--rb-text-sm);color:var(--rb-text-muted)">→ Technology as enabler of human potential</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" style="border-top:1px solid var(--rb-gray-700);max-width:1120px;margin:0 auto;padding:80px 32px">
+    <span style="font-size:var(--rb-text-2xs);letter-spacing:0.2em;color:var(--rb-yellow-500)">04 / PORTFOLIO</span>
+    <h2 style="font-size:clamp(24px,3vw,36px);text-transform:uppercase;margin:8px 0 12px">Things I have built and improved</h2>
+    <p style="color:var(--rb-text-muted);font-size:var(--rb-text-sm);margin:0 0 24px">{{ portfolioCount }} projects · filter by category.</p>
+    <div data-noprint="" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px">
+      <sc-for list="{{ categories }}" as="c" hint-placeholder-count="5">
+        <x-import component-from-global-scope="RBSystem.Tag" selected="{{ c.on }}" onClick="{{ c.select }}" hint-size="140px,30px">{{ c.name }}</x-import>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--rb-gray-700);border:1px solid var(--rb-gray-700)">
+      <sc-for list="{{ portfolio }}" as="p" hint-placeholder-count="9">
+        <div style="background:var(--rb-surface-page);padding:20px" style-hover="background:var(--rb-surface-card)">
+          <div style="font-size:var(--rb-text-2xs);letter-spacing:0.16em;text-transform:uppercase;color:var(--rb-yellow-600)">{{ p.cat }}</div>
+          <div style="margin-top:10px;font-size:var(--rb-text-base);line-height:1.5;color:var(--rb-text-secondary);text-wrap:pretty">{{ p.text }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="education" style="border-top:1px solid var(--rb-gray-700);max-width:1120px;margin:0 auto;padding:80px 32px">
+    <span style="font-size:var(--rb-text-2xs);letter-spacing:0.2em;color:var(--rb-yellow-500)">05 / EDUCATION</span>
+    <h2 style="font-size:clamp(24px,3vw,36px);text-transform:uppercase;margin:8px 0 32px">Still studying, on purpose</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+      <sc-for list="{{ education }}" as="e" hint-placeholder-count="6">
+        <div data-reveal="" style="opacity:0;transform:translateY(18px);transition:opacity 600ms var(--rb-ease-out),transform 600ms var(--rb-ease-out);border:1px solid var(--rb-gray-700);background:var(--rb-surface-card);padding:22px 20px">
+          <div style="font-family:var(--rb-font-display);font-size:var(--rb-text-2xl);color:var(--rb-yellow-500);line-height:1">{{ e.year }}</div>
+          <div style="margin-top:14px;font-size:var(--rb-text-base);line-height:1.5;color:var(--rb-text-primary);text-wrap:pretty">{{ e.title }}</div>
+          <div style="margin-top:8px;font-size:var(--rb-text-2xs);letter-spacing:0.14em;text-transform:uppercase;color:var(--rb-text-muted)">{{ e.school }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px">
+      <div>
+        <div style="font-size:var(--rb-text-2xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--rb-text-muted);margin-bottom:16px">Languages</div>
+        <div style="display:grid;gap:14px">
+          <sc-for list="{{ languages }}" as="l" hint-placeholder-count="4">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:var(--rb-text-sm);color:var(--rb-text-secondary)"><span>{{ l.name }}</span><span style="color:var(--rb-yellow-500)">{{ l.level }}</span></div>
+              <div style="margin-top:8px;height:3px;background:var(--rb-gray-700)"><div style="height:3px;width:{{ l.pct }};background:var(--rb-yellow-500)"></div></div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:var(--rb-text-2xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--rb-text-muted);margin-bottom:16px">Beyond the job</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ interests }}" as="i" hint-placeholder-count="6">
+            <span style="border:1px solid var(--rb-gray-700);padding:8px 14px;font-size:var(--rb-text-sm);color:var(--rb-text-muted)">{{ i }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="values" style="border-top:1px solid var(--rb-gray-700);max-width:1120px;margin:0 auto;padding:80px 32px">
+    <span style="font-size:var(--rb-text-2xs);letter-spacing:0.2em;color:var(--rb-yellow-500)">06 / VALUES</span>
+    <h2 style="font-size:clamp(24px,3vw,36px);text-transform:uppercase;margin:8px 0 12px">What I do not trade away</h2>
+    <p style="color:var(--rb-text-muted);font-size:var(--rb-text-sm);margin:0 0 32px;max-width:60ch">I seek excellence and strive to save the planet by cultivating sustainable habits and practices, to inspire others to improve themselves and the world.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--rb-gray-700);border:1px solid var(--rb-gray-700)">
+      <sc-for list="{{ values }}" as="v" hint-placeholder-count="7">
+        <div style="background:var(--rb-surface-page);padding:22px 20px">
+          <div style="font-family:var(--rb-font-display);font-size:var(--rb-text-base);text-transform:uppercase;color:var(--rb-yellow-500);letter-spacing:0.1em">{{ v.name }}</div>
+          <div style="margin-top:12px;display:grid;gap:6px">
+            <sc-for list="{{ v.items }}" as="it" hint-placeholder-count="3">
+              <div style="font-size:var(--rb-text-sm);color:var(--rb-text-muted)">{{ it }}</div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--rb-gray-700);background:var(--rb-surface-sunken)">
+    <div style="max-width:1120px;margin:0 auto;padding:64px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;align-items:start">
+      <div>
+        <div style="font-family:var(--rb-font-display);font-size:var(--rb-text-xl);text-transform:uppercase">Let's talk</div>
+        <p style="margin:12px 0 0;font-size:var(--rb-text-sm);line-height:1.6;color:var(--rb-text-muted);max-width:38ch">AI, sustainability and industrial systems — where those three meet is where I work best.</p>
+      </div>
+      <div style="display:grid;gap:10px;font-size:var(--rb-text-sm)">
+        <a href="mailto:raffaele.bini@gmail.com">raffaele.bini@gmail.com</a>
+        
+        <a href="https://www.raffaelebini.com" target="_blank" rel="noreferrer">www.raffaelebini.com</a>
+        <a href="https://www.linkedin.com/in/raffaelebini/" target="_blank" rel="noreferrer">linkedin.com/in/raffaelebini</a>
+      </div>
+      <div data-noprint="" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+        <x-import component-from-global-scope="RBSystem.Button" variant="secondary" onClick="{{ onPrint }}" hint-size="200px,44px">Download PDF CV</x-import>
+        <span style="font-size:var(--rb-text-2xs);letter-spacing:0.14em;text-transform:uppercase;color:var(--rb-text-disabled)">Print view opens all timeline steps</span>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startExpanded&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Timeline&quot;}}">
+const THEMES = ["Operations", "Lean & TPM", "Digital & AI", "Sustainability"];
+
+const TIMELINE = [
+  {
+    id: "datalife", period: "2024 — present", duration: "Current", role: "Projects Consultant",
+    company: "DIH DATAlife", place: "Galicia, Spain", theme: "Digital & AI", tone: "accent",
+    summary: "DIH DATAlife is the Digital Innovation Hub for Life Sciences in Galicia. I work with companies in its strategic sectors to accelerate digital transformation, with data as the central axis.",
+    bullets: [
+      "Introduction of disruptive technologies: artificial intelligence, IoT, high performance computing, cybersecurity",
+      "Digital maturity assessments and digitalization strategies for factories and companies",
+      "Facilitating access to financing and proofs of concept",
+      "Connecting technology supply and industrial demand across the ecosystem"
+    ]
+  },
+  {
+    id: "gc", period: "2022 — 2023", duration: "2 years", role: "Technical Director",
+    company: "Generale Conserve SpA", place: "Olbia, Sardinia, Italy", theme: "Operations", tone: "neutral",
+    summary: "Technical leadership of the organization: engineering, maintenance, industrial investments and infrastructure development in a food manufacturing environment.",
+    bullets: [
+      "Leadership of engineering and maintenance, ensuring reliability and efficiency of production assets",
+      "Planning and execution of industrial projects and capital investments",
+      "Industry 4.0 initiatives supporting plant modernization",
+      "Technical procurement and supplier coordination",
+      "Oversight of health, safety and environmental management",
+      "Energy initiatives, including a 1.5 MWp photovoltaic project"
+    ]
+  },
+  {
+    id: "illy", period: "2018 — 2021", duration: "3 years", role: "Head of Production",
+    company: "illycaffè", place: "Trieste, Italy", theme: "Lean & TPM", tone: "neutral",
+    summary: "Ran the plant dedicated to coffee portion products — manufacturing operations, production strategy and continuous improvement.",
+    bullets: [
+      "Management of manufacturing operations and production teams",
+      "Medium- and long-term production and maintenance strategies",
+      "Leadership and development of technical and operational personnel",
+      "Management and control of the production budget",
+      "Deployment of continuous improvement initiatives",
+      "Industrialization of new products, from development to full-scale production"
+    ]
+  },
+  {
+    id: "nestle", period: "2005 — 2018", duration: "13 years", role: "Engineering, Operations & Performance",
+    company: "Nestlé Waters", place: "San Pellegrino Terme · Scarperia · Milan", theme: "Lean & TPM", tone: "neutral",
+    summary: "Five successive leadership roles across engineering, operations and industrial performance in several manufacturing plants — the years where Lean, TPM and large industrial projects became my craft.",
+    bullets: [
+      "Operational excellence and continuous improvement across a multi-plant organization",
+      "Industrial investment projects, from LNG thermal power station to bottling lines",
+      "SAP and MES implementation across factories",
+      "Food safety and quality management systems across 10 factories"
+    ],
+    roles: [
+      { role: "Head of Engineering & Maintenance", place: "San Pellegrino Terme · Scarperia", period: "2011 — 2018" },
+      { role: "Industrial Performance Manager", place: "Scarperia", period: "2013 — 2016" },
+      { role: "Production Supervisor", place: "San Pellegrino Terme", period: "2010 — 2011" },
+      { role: "Quality & Food Safety System Manager", place: "Milan area", period: "2008 — 2010" },
+      { role: "Project Manager", place: "Multiple factories", period: "2005 — 2008" }
+    ]
+  }
+];
+
+const METRICS = [
+  { v: 1.3, dec: 1, suffix: " M€", label: "TPM savings", note: "Savings from implementing TPM in maintenance" },
+  { v: 3, dec: 0, suffix: " M€", label: "Lean savings", note: "By implementing Lean Manufacturing across the supply chain" },
+  { v: 94, dec: 0, suffix: "%", label: "OEE reached", note: "Bottling line OEE from 72% to 94% through TPM" },
+  { v: 100, dec: 0, suffix: " h", label: "MTBF", note: "Bottling line MTBF from 22h to 100h through breakdown analysis" },
+  { v: 40, dec: 0, prefix: "+", suffix: "%", label: "Productivity", note: "Applying Lean Manufacturing on the shop floor" },
+  { v: 18, dec: 0, suffix: "+ yrs", label: "Industrial operations", note: "Nestlé Waters, illycaffè, Generale Conserve" }
+];
+
+const SKILLS = [
+  ["Lean Thinking", "Lean and TPM are not toolkits to me — they are a way of looking at a plant until waste becomes visible and the team owns the fix."],
+  ["Problem Solving", "Structured breakdown analysis: from symptom to root cause to a countermeasure that survives the next shift."],
+  ["Industrial Operations", "18+ years running engineering, maintenance and production in large food and beverage plants."],
+  ["Digital Transformation", "MES, IoT, CMMS, SAP: digitalization only pays when it changes a decision someone actually makes."],
+  ["Artificial Intelligence", "Three masters in Industry 4.0, Data Analysis and Data Science — applied to prediction, classification and decision support."],
+  ["Data Science & ML", "Predictive model development and comparison, wine classification, food waste analytics and infographics."],
+  ["Sustainability", "Energy efficiency, cogeneration, photovoltaic, effluent treatment: ecological transition as a strategic driver."],
+  ["Making hard things simple", "I translate technical complexity into language a board, a shift leader and a student can each act on."],
+  ["Team Building", "High-performance teams built on trust, engagement and accountability rather than pressure."],
+  ["Motivating People", "Work environments focused on well-being, growth and intrinsic motivation — performance follows."],
+  ["Active Listening", "Most industrial problems are already described by someone on the line. The job is to hear it."],
+  ["Stress Management", "Calm under plant-down conditions: prioritise, decide, communicate, review."]
+];
+
+const PORTFOLIO = [
+  ["Production lines", "3 complete PET bottling lines"],
+  ["Production lines", "2 complete bottling lines for beverages in cans"],
+  ["Production lines", "1 packaging and palletising line for water in PET bottles"],
+  ["Production lines", "1 palletising line for beverages in cans"],
+  ["Production lines", "1 filling line for water in glass bottles"],
+  ["Production lines", "2 filling lines for coffee capsules"],
+  ["Production lines", "1 coffee capsule assembly line"],
+  ["Production lines", "2 packaging lines for coffee capsules"],
+  ["Industrial facilities", "LNG thermal power station — project and commissioning"],
+  ["Industrial facilities", "4.5 MW cogeneration plant — project and commissioning"],
+  ["Industrial facilities", "2 screw compressors for 40 bar air"],
+  ["Industrial facilities", "3 centrifugal compressors for 8–10 bar air"],
+  ["Industrial facilities", "1.5 MWp photovoltaic plant (~3500 panels)"],
+  ["Industrial facilities", "MBBR membrane biological effluent and sludge treatment plant"],
+  ["Industrial facilities", "Automated warehouse for finished product pallets"],
+  ["Industrial facilities", "Glass bottle grinding and crushing plant"],
+  ["Digital & Industry 4.0", "SAP implementation in 3 factories"],
+  ["Digital & Industry 4.0", "MES implementation in 3 factories"],
+  ["Digital & Industry 4.0", "Industrial IoT and cloud computing on production lines"],
+  ["Digital & Industry 4.0", "CMMS / GMAO implementation"],
+  ["Digital & Industry 4.0", "Digital maturity assessment of companies"],
+  ["Digital & Industry 4.0", "Digitalization strategy and plan for factories and companies"],
+  ["Data & AI", "Food waste data analysis project and infographics"],
+  ["Data & AI", "Machine learning model for wine classification"],
+  ["Data & AI", "Development and comparison of predictive ML models"],
+  ["Lean & Six Sigma", "TPM and 5S implementation in food factories"],
+  ["Lean & Six Sigma", "Value stream mapping"],
+  ["Lean & Six Sigma", "OEE improvement of a bottling line (+6 OEE points)"],
+  ["Lean & Six Sigma", "Spare parts optimisation — turnover rate from 2.5 to 1.3 years"],
+  ["Lean & Six Sigma", "Maintenance internalisation to reduce external contractor cost"],
+  ["Lean & Six Sigma", "Machine micro-stoppage reduction (−60%)"],
+  ["Lean & Six Sigma", "SMED changeover time reduction projects"]
+];
+
+const EDUCATION = [
+  { year: "2024", title: "Master in Data Science", school: "start2impact University" },
+  { year: "2023", title: "Master in Data Analysis", school: "start2impact University" },
+  { year: "2022", title: "Master in Industry 4.0 Design", school: "Università di Pisa" },
+  { year: "2016", title: "Master in Integrated Management Systems: Quality, Safety, Environment, Energy", school: "ISTUM" },
+  { year: "2015", title: "Energy Management Expert", school: "THE ACS" },
+  { year: "2004", title: "MSc in Mechanical Engineering", school: "Università degli Studi di Firenze" }
+];
+
+const VALUES = [
+  { name: "Love", items: ["Sensitivity", "Gratitude", "Empathy"] },
+  { name: "Beauty", items: ["Creativity", "Calm", "Kindness"] },
+  { name: "Spirituality", items: ["Ethics", "Patience", "Serenity"] },
+  { name: "Consistency", items: ["Determination", "Courage", "Uniqueness"] },
+  { name: "Integrity", items: ["Justice", "Honesty", "Responsibility"] },
+  { name: "Freedom", items: ["Independence", "Respect", "Truth"] },
+  { name: "Health", items: ["Balance", "Self-discipline", "Positivity"] }
+];
+
+class Component extends DCLogic {
+  state = {
+    open: {},
+    themeFilter: [],
+    category: "All",
+    skill: 0,
+    counted: false,
+    p: 0
+  };
+
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = "1";
+        e.target.style.transform = "none";
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll("[data-reveal]").forEach((el, i) => {
+      el.style.transitionDelay = (i % 6) * 70 + "ms";
+      io.observe(el);
+    });
+    this._io = io;
+
+    this._fallback = setTimeout(() => {
+      document.querySelectorAll("[data-reveal]").forEach((el) => {
+        if (getComputedStyle(el).opacity !== "1") {
+          el.style.opacity = "1";
+          el.style.transform = "none";
+        }
+      });
+    }, 900);
+    this._countFallback = setTimeout(() => {
+      if (!this.state.counted) { this.setState({ counted: true }); this.runCount(); }
+    }, 500);
+
+    const impact = document.getElementById("impact");
+    if (impact) {
+      const co = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting) && !this.state.counted) {
+          this.setState({ counted: true });
+          this.runCount();
+          co.disconnect();
+        }
+      }, { threshold: 0.25 });
+      co.observe(impact);
+      this._co = co;
+    }
+    if (this.props.startExpanded) {
+      const open = {};
+      TIMELINE.forEach((j) => { open[j.id] = true; });
+      this.setState({ open });
+    } else {
+      this.setState({ open: { datalife: true } });
+    }
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._co) this._co.disconnect();
+    if (this._raf) cancelAnimationFrame(this._raf);
+    clearTimeout(this._fallback);
+    clearTimeout(this._countFallback);
+  }
+
+  runCount() {
+    const t0 = performance.now();
+    const dur = 1500;
+    const tick = (t) => {
+      const k = Math.min(1, (t - t0) / dur);
+      const eased = 1 - Math.pow(1 - k, 3);
+      this.setState({ p: eased });
+      if (k < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+
+  toggle(id) {
+    this.setState((s) => ({ open: Object.assign({}, s.open, { [id]: !s.open[id] }) }));
+  }
+
+  toggleTheme(name) {
+    this.setState((s) => ({
+      themeFilter: s.themeFilter.indexOf(name) > -1
+        ? s.themeFilter.filter((x) => x !== name)
+        : s.themeFilter.concat([name])
+    }));
+  }
+
+  print() {
+    const open = {};
+    TIMELINE.forEach((j) => { open[j.id] = true; });
+    this.setState({ open }, () => setTimeout(() => window.print(), 120));
+  }
+
+  renderVals() {
+    const s = this.state;
+    const p = s.counted ? s.p : 0;
+
+    const metrics = METRICS.map((m) => {
+      const val = m.v * p;
+      return {
+        display: (m.prefix || "") + val.toFixed(m.dec) + m.suffix,
+        label: m.label,
+        note: m.note
+      };
+    });
+
+    const themes = THEMES.map((name) => ({
+      name,
+      on: s.themeFilter.indexOf(name) > -1,
+      toggle: () => this.toggleTheme(name)
+    }));
+
+    const filtered = s.themeFilter.length
+      ? TIMELINE.filter((j) => s.themeFilter.indexOf(j.theme) > -1)
+      : TIMELINE;
+
+    const timeline = filtered.map((j) => {
+      const open = !!s.open[j.id];
+      const current = j.id === "datalife";
+      return Object.assign({}, j, {
+        toggle: () => this.toggle(j.id),
+        open,
+        caret: open ? "▴" : "▾",
+        hasRoles: !!j.roles,
+        roles: j.roles || [],
+        dot: current ? "var(--rb-yellow-500)" : "var(--rb-gray-500)",
+        dotGlow: current ? "var(--rb-glow-sm)" : "none",
+        border: open ? "var(--rb-yellow-700)" : "var(--rb-gray-700)"
+      });
+    });
+
+    const skills = SKILLS.map((sk, i) => ({
+      name: sk[0],
+      border: i === s.skill ? "var(--rb-yellow-500)" : "var(--rb-gray-700)",
+      color: i === s.skill ? "var(--rb-yellow-500)" : "var(--rb-text-secondary)",
+      hover: () => this.setState({ skill: i })
+    }));
+
+    const cats = ["All"].concat(PORTFOLIO.reduce((a, x) => (a.indexOf(x[0]) > -1 ? a : a.concat([x[0]])), []));
+    const categories = cats.map((name) => ({
+      name,
+      on: s.category === name,
+      select: () => this.setState({ category: name })
+    }));
+
+    const portfolio = PORTFOLIO
+      .filter((x) => s.category === "All" || x[0] === s.category)
+      .map((x) => ({ cat: x[0], text: x[1] }));
+
+    return {
+      metrics, themes, timeline, skills, categories, portfolio,
+      portfolioCount: PORTFOLIO.length,
+      activeSkillName: SKILLS[s.skill][0],
+      activeSkillNote: SKILLS[s.skill][1],
+      education: EDUCATION,
+      values: VALUES,
+      languages: [
+        { name: "Italian", level: "Mother tongue", pct: "100%" },
+        { name: "Spanish", level: "C1", pct: "88%" },
+        { name: "Galician", level: "C1", pct: "85%" },
+        { name: "English", level: "C1", pct: "88%" }
+      ],
+      interests: ["Books", "Creativity & arts", "Boxing", "Hiking", "Calisthenics", "STEM & AI", "Sustainability", "Personal growth", "Technical writing", "Travel"],
+      onPrint: () => this.print(),
+      onLinkedIn: () => window.open("https://www.linkedin.com/in/raffaelebini/", "_blank"),
+      onMail: () => { window.location.href = "mailto:raffaele.bini@gmail.com"; }
+    };
+  }
+}
+</script>
+</body>
+</html>

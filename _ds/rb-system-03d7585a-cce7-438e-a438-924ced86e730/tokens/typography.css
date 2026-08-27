@@ -1,0 +1,27 @@
+:root {
+  --rb-font-display: "Orbitron", system-ui, sans-serif;
+  --rb-font-mono: "Share Tech Mono", ui-monospace, "SFMono-Regular", monospace;
+  --rb-font-longform: "IBM Plex Sans", system-ui, sans-serif;
+
+  --rb-text-2xs: 0.6875rem;  /* 11px — solo etichette maiuscole */
+  --rb-text-xs: 0.75rem;     /* 12px */
+  --rb-text-sm: 0.875rem;    /* 14px */
+  --rb-text-base: 1rem;      /* 16px — minimo per il corpo del testo */
+  --rb-text-lg: 1.25rem;
+  --rb-text-xl: 1.5rem;
+  --rb-text-2xl: 2rem;
+  --rb-text-3xl: 2.75rem;
+  --rb-text-4xl: 3.75rem;
+
+  --rb-leading-tight: 1.1;
+  --rb-leading-snug: 1.35;
+  --rb-leading-normal: 1.6;
+
+  --rb-tracking-display: 0.02em;
+  --rb-tracking-label: 0.16em;  /* etichette mono maiuscole */
+  --rb-tracking-body: 0;
+
+  --rb-weight-regular: 400;
+  --rb-weight-medium: 500;
+  --rb-weight-bold: 700;
+}

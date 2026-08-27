@@ -1,0 +1,26 @@
+:root {
+  /* Scala a base 4px, densità "bilanciata" */
+  --rb-space-0: 0;
+  --rb-space-1: 4px;
+  --rb-space-2: 8px;
+  --rb-space-3: 12px;
+  --rb-space-4: 16px;
+  --rb-space-5: 20px;
+  --rb-space-6: 24px;
+  --rb-space-8: 32px;
+  --rb-space-10: 40px;
+  --rb-space-12: 48px;
+  --rb-space-16: 64px;
+  --rb-space-20: 80px;
+
+  --rb-gap-default: var(--rb-space-4);
+  --rb-pad-card: var(--rb-space-5);
+  --rb-pad-section: var(--rb-space-12);
+
+  --rb-grid-columns: 12;
+  --rb-grid-gutter: var(--rb-space-6);
+  --rb-container-max: 1200px;
+
+  /* Clearspace obbligatorio attorno al logo = metà della sua altezza */
+  --rb-logo-clearspace: 0.5;
+}

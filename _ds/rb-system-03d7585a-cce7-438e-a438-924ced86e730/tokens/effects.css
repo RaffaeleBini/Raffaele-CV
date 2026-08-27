@@ -1,0 +1,40 @@
+:root {
+  /* Raggi piccoli: il sistema è squadrato, non morbido */
+  --rb-radius-none: 0;
+  --rb-radius-sm: 2px;
+  --rb-radius-md: 4px;
+  --rb-radius-lg: 8px;
+  --rb-radius-xl: 14px;
+  --rb-radius-pill: 999px;
+
+  --rb-border-hairline: 1px solid var(--rb-gray-700);
+  --rb-border-default: 1px solid var(--rb-gray-600);
+  --rb-border-strong: 1px solid var(--rb-gray-500);
+  --rb-border-accent: 1px solid var(--rb-yellow-500);
+
+  /* Glow: la firma visiva HUD. Mai più di un elemento in glow per schermata */
+  --rb-glow-sm: 0 0 12px rgba(252, 212, 74, 0.25);
+  --rb-glow-md: 0 0 24px rgba(252, 212, 74, 0.35);
+  --rb-glow-lg: 0 0 48px rgba(252, 212, 74, 0.28);
+
+  --rb-shadow-raised: 0 2px 8px rgba(0, 0, 0, 0.6);
+  --rb-shadow-overlay: 0 24px 64px rgba(0, 0, 0, 0.75);
+
+  --rb-focus-ring: 0 0 0 2px var(--rb-black-900), 0 0 0 4px var(--rb-yellow-500);
+
+  /* Angolo smussato: la forma del logo, riusabile su superfici chiave */
+  --rb-chamfer-sm: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+  --rb-chamfer-md: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+
+  --rb-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --rb-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --rb-duration-fast: 120ms;
+  --rb-duration-base: 200ms;
+  --rb-duration-slow: 360ms;
+
+  --rb-scanline: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.022) 0 1px,
+    transparent 1px 3px
+  );
+}
