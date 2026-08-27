@@ -51,7 +51,7 @@
     <p style="max-width:62ch;margin:32px 0 0;font-size:var(--rb-text-lg);line-height:1.65;color:var(--rb-text-secondary);text-wrap:pretty">I am a mechanical engineer working at the intersection of artificial intelligence, digital technology and sustainable innovation. For 18+ years I ran industrial operations inside large food companies; today I help organizations turn emerging technology into decisions that hold up in complex systems.</p>
     <p style="max-width:62ch;margin:20px 0 0;font-size:var(--rb-text-base);line-height:1.65;color:var(--rb-text-muted);text-wrap:pretty">What motivates me most is building relationships with people, facing the challenge of change, and continuously looking for opportunities to improve.</p>
     <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px" data-noprint="">
-      <x-import component-from-global-scope="RBSystem.Button" variant="primary" glow="{{ true }}" onClick="{{ onPrint }}" hint-size="200px,44px">Download PDF CV</x-import>
+      <x-import component-from-global-scope="RBSystem.Button" variant="primary" glow="{{ true }}" onClick="{{ onDownloadCV }}" hint-size="200px,44px">Download PDF CV</x-import>
       <x-import component-from-global-scope="RBSystem.Button" variant="secondary" onClick="{{ onLinkedIn }}" hint-size="150px,44px">LinkedIn →</x-import>
       
     </div>
@@ -254,8 +254,7 @@
         <a href="https://www.linkedin.com/in/raffaelebini/" target="_blank" rel="noreferrer">linkedin.com/in/raffaelebini</a>
       </div>
       <div data-noprint="" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
-        <x-import component-from-global-scope="RBSystem.Button" variant="secondary" onClick="{{ onPrint }}" hint-size="200px,44px">Download PDF CV</x-import>
-        <span style="font-size:var(--rb-text-2xs);letter-spacing:0.14em;text-transform:uppercase;color:var(--rb-text-disabled)">Print view opens all timeline steps</span>
+        <x-import component-from-global-scope="RBSystem.Button" variant="secondary" onClick="{{ onDownloadCV }}" hint-size="200px,44px">Download PDF CV</x-import>
       </div>
     </div>
   </footer>
@@ -490,10 +489,13 @@ class Component extends DCLogic {
     }));
   }
 
-  print() {
-    const open = {};
-    TIMELINE.forEach((j) => { open[j.id] = true; });
-    this.setState({ open }, () => setTimeout(() => window.print(), 120));
+  downloadCV() {
+    const a = document.createElement("a");
+    a.href = "uploads/RaffaeleBiniCV.pdf";
+    a.download = "Raffaele Bini - CV.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   }
 
   renderVals() {
@@ -566,7 +568,7 @@ class Component extends DCLogic {
         { name: "English", level: "C1", pct: "88%" }
       ],
       interests: ["Books", "Creativity & arts", "Boxing", "Hiking", "Calisthenics", "STEM & AI", "Sustainability", "Personal growth", "Technical writing", "Travel"],
-      onPrint: () => this.print(),
+      onDownloadCV: () => this.downloadCV(),
       onLinkedIn: () => window.open("https://www.linkedin.com/in/raffaelebini/", "_blank"),
       onMail: () => { window.location.href = "mailto:raffaele.bini@gmail.com"; }
     };
