@@ -9,7 +9,19 @@
 <x-dc>
 <helmet>
 <link rel="stylesheet" href="_ds/rb-system-03d7585a-cce7-438e-a438-924ced86e730/styles.css">
-<script src="_ds/rb-system-03d7585a-cce7-438e-a438-924ced86e730/_ds_bundle.js"></script>
+<script>
+(function () {
+  function boot() {
+    var s = document.createElement("script");
+    s.src = "_ds/rb-system-03d7585a-cce7-438e-a438-924ced86e730/_ds_bundle.js";
+    document.head.appendChild(s);
+  }
+  if (window.React && window.ReactDOM) { boot(); return; }
+  var iv = setInterval(function () {
+    if (window.React && window.ReactDOM) { clearInterval(iv); boot(); }
+  }, 20);
+})();
+</script>
 <style>
   html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--rb-surface-page); }

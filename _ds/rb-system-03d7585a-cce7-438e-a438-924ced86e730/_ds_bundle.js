@@ -53,7 +53,11 @@ var RBSystem = (() => {
   var require_react_shim = __commonJS({
     "shim:react-shim"(exports, module) {
       init_define_import_meta_env();
-      var R = window.React;
+      function real() {
+        var R = window.React;
+        if (!R) throw new Error("react-shim: window.React is not available yet");
+        return R;
+      }
       function np(p, k) {
         var o = {};
         for (var x in p) if (x !== "children") o[x] = p[x];
@@ -62,18 +66,48 @@ var RBSystem = (() => {
       }
       function jsx(t, p, k) {
         var c = p && p.children;
-        return c === void 0 ? R.createElement(t, np(p, k)) : R.createElement(t, np(p, k), c);
+        return c === void 0 ? real().createElement(t, np(p, k)) : real().createElement(t, np(p, k), c);
       }
       function jsxs(t, p, k) {
-        return R.createElement.apply(R, [t, np(p, k)].concat(p.children));
+        return real().createElement.apply(real(), [t, np(p, k)].concat(p.children));
       }
-      module.exports = R;
-      module.exports.jsx = jsx;
-      module.exports.jsxs = jsxs;
-      module.exports.jsxDEV = function(t, p, k, s) {
-        return (s ? jsxs : jsx)(t, p, k);
+      var extra = {
+        jsx,
+        jsxs,
+        jsxDEV: function(t, p, k, s) {
+          return (s ? jsxs : jsx)(t, p, k);
+        }
       };
-      module.exports.Fragment = R.Fragment;
+      module.exports = new Proxy({}, {
+        get: function(_t, prop) {
+          return Object.prototype.hasOwnProperty.call(extra, prop) ? extra[prop] : real()[prop];
+        },
+        has: function(_t, prop) {
+          return prop in extra || prop in real();
+        },
+        ownKeys: function() {
+          var keys = Object.keys(extra);
+          try {
+            Object.keys(real()).forEach(function(k) {
+              if (keys.indexOf(k) === -1) keys.push(k);
+            });
+          } catch (e) {
+          }
+          return keys;
+        },
+        getOwnPropertyDescriptor: function(_t, prop) {
+          if (Object.prototype.hasOwnProperty.call(extra, prop)) {
+            return { configurable: true, enumerable: true, value: extra[prop] };
+          }
+          var R;
+          try {
+            R = real();
+          } catch (e) {
+            return void 0;
+          }
+          return prop in R ? { configurable: true, enumerable: true, value: R[prop] } : void 0;
+        }
+      });
     }
   });
 
